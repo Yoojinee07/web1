@@ -1,0 +1,228 @@
+/* web fonts */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+    font-family: 'nanumgothic';
+    font-size: 13px;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout CSS */
+.container {
+    background-color: #fff;
+    height: 100vh;
+}
+.login {
+    /* border: 3px solid red; */
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    background-color: #fff;
+    padding: 10px;
+}
+.header h1 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 540;
+    position: relative;
+}
+.header h1 a img {
+    content: url(./SYJ_LION_img/close.png);
+    position: absolute;
+    right: 14px;
+    top: -1px;
+}
+/* .header img {
+    display: block;
+    margin: auto;
+} */
+.login-type {
+    text-align: center;
+}
+.login-type h2 {
+    font-size: 22px;
+    text-align: left;
+    font-weight: normal;
+}
+/* login-keep CSS */
+.login-keep {
+    text-align: left;
+    padding: 0px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #7f7f7f;
+    cursor: default;
+}
+.login-keep p :hover {
+    cursor : pointer;
+}
+.login-keep p input[type="checkbox"] {
+    position: absolute;
+    left: -3000%;
+}
+.login-keep p input[type="checkbox"] + label:before {
+    content: url(./SYJ_LION_img/icon_check_empty.png);
+    display: inline-block;
+    margin-right: 1.5%;
+    vertical-align: -4.5px;
+}
+.login-keep p input[type="checkbox"]:checked + label:before {
+    content: url(./SYJ_LION_img/icon_check.png);
+    display: inline-block;
+    margin-right: 1.5%;
+    vertical-align: -4.5px;
+}
+
+/* join CSS */
+.login div ul {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    
+}
+.login div ul li { 
+    /* border: 1px solid red; */
+    position: relative;
+    left: -22px;
+    padding: 0 12px; 
+} 
+.login div ul li.line1~li.line2 { 
+    position: relative;
+    padding: 0 0 0 10px; 
+}
+.login div ul li.line2~li.line3 { 
+    position: relative;
+    padding: 0 0 0 8px; 
+}
+.login div ul li.line1~li.line2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.5px;
+    height: 14px;
+    width: 1px;
+    background: #7f7f7f;
+}
+.login div ul li.line2~li.line3:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1.5px;
+    height: 14px;
+    width: 1px;
+    background: #7f7f7f;
+    transform: rotate(25deg);
+}
+.login div ul li a { 
+    text-decoration: none;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+/* or-txt CSS */
+span.or-txt {
+    /* border: 1px solid red; */
+    display: block;
+    margin: 15px 0 20px;
+    position: relative;
+    color: #7f7f7f;
+}
+span.or-txt:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #c9c9c9;
+    width: 45%;
+    height: 1.3px;
+}
+span.or-txt:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background-color: #c9c9c9;
+    width: 45%;
+    height: 1.3px;
+}
+
+/* Button CSS */
+a.btn {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid lightgray;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+    position: relative;
+}
+a.btn:hover {
+    opacity: 1;
+}
+a.btn1 {
+    background-color: #0063e6;
+    border: 1.5px solid #0063e6;
+    font-size: 20px;
+    font-weight:bold;
+    color: #fff;
+    /* opacity: 1; */
+}
+a.btn2 {
+    border: 1.5px solid #8b8b8b;
+    color: rgb(107, 107, 107);
+}
+a.btn3 {
+    border: 1.5px solid #2da4e4;
+    color: rgb(107, 107, 107);
+}
+a.btn4 {
+    border: 1.5px solid #3ecf51;
+    color: rgb(107, 107, 107);
+}
+a.btn5 {
+    border: 1.5px solid #f5cf5d;
+    color: rgb(107, 107, 107);
+}
+
+a.btn2:before {
+    content: url(./SYJ_LION_img/icon_google.png);
+    position: absolute;
+    left: 14px;
+    top: 5px;
+}
+a.btn3:before {
+    content: url(./SYJ_LION_img/icon_facebook.png);
+    position: absolute;
+    left: 17px;
+    top: 5px;
+}
+a.btn4:before {
+    content: url(./SYJ_LION_img/icon_naver.png);
+    position: absolute;
+    left: 14px;
+    top: 5px;
+}
+a.btn5:before {
+    content: url(./SYJ_LION_img/icon_kakao.png);
+    position: absolute;
+    left: 14px;
+    top: 5px;
+}
+
+
+
+
